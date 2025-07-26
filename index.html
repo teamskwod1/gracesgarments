@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace's Garments</title>
+    <link rel="shortcut icon" type="image/x-icon" href="gfav1.ico">
+    <style>
+        /* General Styles */
+        * {
+            font-family: 'Baskerville', Arial, sans-serif;
+            font-size: 20px;
+            background-color: rgb(249,222,222);
+            color: rgb(50,44,44);
+        }
+                
+        h1 {
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px;
+        }
+
+        a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #888;
+        }
+        
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            transition: color 0.3s;
+            margin: 0px 15px;
+        }
+        
+        .brand {
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 700;
+            text-shadow: 2px 2px white, 3.5px 3.5px lightgray;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 60px 60px;
+        }
+
+        .midcontainer {
+            width: 100%;
+            margin-left: 0;
+            padding-bottom: 5%;
+            background-color: rgb(209,187,186);
+        }
+        .midtextbox {
+            margin-top: -30%;
+            margin-left: 35%;
+            width: 40%;
+            z-index: 2;
+            padding: 7% 10%;
+            position: relative;
+        }
+        .resume {
+            font-style: italic;
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .resumeimg {
+            width: 50%;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            z-index: 1;
+            position: relative;
+        }
+
+        .botcontainer {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .bottomtext {
+            background-color: rgb(50,44,44);
+            text-align: center;
+            flex: 1;
+        }
+        .bottomimg {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .contact {
+            background-color: rgb(50,44,44);
+            color: rgb(209,187,186);
+            font-style: italic;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .contactbody {
+            background-color: rgb(50,44,44);
+            color: rgb(209,187,186);
+        }
+        .footer {
+            height: 10%;
+            text-align: center;
+            padding-bottom: 2%;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">Grace's Garments</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+        </nav>
+    </header>
+    <h1>hello!</h1>
+    <p style="text-align:center">Fashion Portfolio</p>
+    
+    <div class="container">
+        <img src="image1.jpg" style="width:100%">
+    </div>
+    
+    <div class="midcontainer">
+        <img src="image2.jpg" class="resumeimg">
+        <div class="midtextbox">
+            <p class="resume">resume</p><br>
+            <p>Hello, employers! Click below :)</p><br>
+            <a href="about.html#resume" style="margin:0">Resumes</a>
+        </div>
+    </div>
+    
+    <div style="max-height:5%;"><br><br><br></div>
+
+    <div class="botcontainer">
+        <div class="bottomtext">
+            <p class="contact">Contact</p>
+            <p class="contactbody">Brooklyn, NY</p>
+            <a href="mailto" class="contactbody">gracegordon1@gmail.com</a>
+            <p class="contactbody">336.934.2494</p><br><br><br>
+        </div>
+        <div style="flex: 1; padding: 0;"><img src="image3.jpg" class="bottomimg"></div>
+    </div>
+
+    <div style="max-height:5%;"><br><br></div>
+
+    <div class="footer">©2025 by Grace's Garments</div>
+</body>
+</html>

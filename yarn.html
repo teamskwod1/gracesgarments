@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarn Work | Grace's Garments</title>
+    <link rel="shortcut icon" type="image/x-icon" href="gfav1.ico">
+    <style>
+        /* General Styles */
+        * {
+            font-family: 'Baskerville', Arial, sans-serif;
+            font-size: 20px;
+            background-color: rgb(249,222,222);
+            color: rgb(50,44,44);
+        }
+                
+        h1 {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px;
+        }
+
+        a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #888;
+            opacity: 70%;
+        }
+        
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            transition: color 0.3s;
+            margin: 0px 15px;
+        }
+        p {
+            line-height: 30px;
+        }
+        .brand {
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 700;
+            text-shadow: 2px 2px white, 3.5px 3.5px lightgray;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 28% 28% 28%;
+            grid-template-rows: auto auto;
+            justify-content: center;
+            column-gap: 4%;
+            row-gap: 7%;
+            margin-top: 5%;
+        }
+        .images {
+            width: 100%;
+            height: 100%;
+        }
+        .text {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footer {
+            min-height: 10%;
+            padding-top: 7%;
+            text-align: center;
+            padding-bottom: 2%;
+            margin-top: 3%;
+            font-style: italic;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-color: #888;
+        }
+        .overcontainer {
+            position: relative;
+        }
+        .overcontainer:hover .overlay {
+            opacity: 70%;
+        }
+        .text {
+            color: white;
+            background-color: transparent;
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">Grace's Garments</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+        </nav>
+    </header>
+    
+    <div style="margin-left: 5%; font-style: italic; font-weight: 600;"><a href="portfolio.html">...Back to Portfolio</a></div>
+
+    <div style="text-align:center;">
+        <h1>Yarn Work</h1>
+        <p>Crocheted for 9 years, knitted for 6 years.</p>
+    </div>
+
+    <div class="container">
+        <div class="overcontainer">
+            <a href="star.html">
+                <img src="image102.jpg" class="images">
+                <div class="overlay">
+                <div class="text">Star Earmuffs</div>
+            </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="ylegwarmers.html">
+                <img src="image10.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Leg Warmers</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="ysocks.html">
+                <img src="image11.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Socks</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="appa.html">
+                <img src="image103.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Appa Plush</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="knitwarmers.html">
+                <img src="image104.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Knit Leg Warmers</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="strawberry.html" >
+                <img src="image105.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Knit Strawberry Sweater Vest</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="footer">©2025 by Grace's Garments</div>
+</body>
+</html>

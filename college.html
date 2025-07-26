@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Portfolio | Grace's Garments</title>
+    <link rel="shortcut icon" type="image/x-icon" href="gfav1.ico">
+    <style>
+        /* General Styles */
+        * {
+            font-family: 'Baskerville', Arial, sans-serif;
+            font-size: 20px;
+            background-color: rgb(249,222,222);
+            color: rgb(50,44,44);
+        }
+                
+        h1 {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px;
+        }
+
+        a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #888;
+            opacity: 70%;
+        }
+        
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            transition: color 0.3s;
+            margin: 0px 15px;
+        }
+        p {
+            line-height: 30px;
+        }
+        .brand {
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 700;
+            text-shadow: 2px 2px white, 3.5px 3.5px lightgray;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 28% 28% 28%;
+            grid-template-rows: auto auto auto auto;
+            justify-content: center;
+            column-gap: 4%;
+            row-gap: 4%;
+            margin-top: 5%;
+        }
+        .images {
+            width: 100%;
+            height: 100%;
+        }
+        .text {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footer {
+            min-height: 10%;
+            padding-top: 7%;
+            text-align: center;
+            padding-bottom: 2%;
+            margin-top: 10%;
+            font-style: italic;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-color: #888;
+        }
+        .overcontainer {
+            position: relative;
+        }
+        .overcontainer:hover .overlay {
+            opacity: 70%;
+        }
+        .text {
+            color: white;
+            background-color: transparent;
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">Grace's Garments</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+        </nav>
+    </header>
+    
+    <div style="margin-left: 5%; font-style: italic; font-weight: 600;"><a href="portfolio.html">...Back to Portfolio</a></div>
+
+    <div style="text-align:center;">
+        <h1>College Portfolio</h1>
+        <p>August 2021 - present. A portfolio of all the work I have<br>
+            completed under the instruction of a Pratt Institute professor.</p>
+    </div>
+
+    <div class="container">
+        <div class="overcontainer">
+            <a href="orchard.html">
+                <img src="image9.jpg" class="images">
+                <div class="overlay">
+                <div class="text">Orchard Punch: a mini collection</div>
+            </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="legwarmers.html">
+                <img src="image10.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Leg Warmers</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="socks.html">
+                <img src="image11.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Socks</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="pants.html">
+                <img src="image12.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Organza Pants</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="persian.html">
+                <img src="image13.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Persian Folk Dance Dress</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="clown.html" >
+                <img src="image5.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Clowncore</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="zerowaste.html">
+                <img src="image14.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Zero-Waste Dress</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="shibori.html">
+                <img src="image8.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Shibori Pole Wrapped Dye</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="victorian.html">
+                <img src="image15.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Victorian Heart Dress (Muslin Only)</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="clamp.html">
+                <img src="image16.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Clamp Dye</div>
+                </div>
+            </a>
+        </div>
+        <div class="overcontainer">
+            <a href="experiment.html">
+                <img src="image17.jpg" class="images">
+                <div class="overlay">
+                    <div class="text">Dye Experiment</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="footer">©2025 by Grace's Garments</div>
+</body>
+</html>
